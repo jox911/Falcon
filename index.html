@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع فريق فالكون - الصفحة الرئيسية</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>التوعية بالتنمر</h1>
+            <nav>
+                <ul>
+                    
+                    <li><a href="about.html">عن التنمر</a></li>
+                    <li><a href="resources.html">الموارد</a></li>
+                    <li><a href="solutions.html">حلول التنمر</a></li> <!-- تم تحديث الرابط هنا -->
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                    <li><a href="details.html">معلومات عن التنمر</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>مرحبا بك في موقع فريق فالكون</h2>
+            <p>نهدف إلى تقديم معلومات ودعم لمكافحة التنمر وتعزيز بيئة آمنة ومشجعة للجميع.</p>
+            <a href="contact.html" class="btn-primary">اتصل بنا الآن</a>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <h2>ميزاتنا</h2>
+            <div  id="education" class="feature-item clickable-div" >
+                <h3>التثقيف</h3>
+                <p>نقدم معلومات شاملة حول التنمر وتأثيراته.</p>
+            </div>
+            <div  id="support" class="feature-item clickable-div">
+                <h3>الدعم</h3>
+                <p>ندعم الأفراد المتضررين من التنمر بمصادر ونصائح عملية.</p>
+            </div>
+            <div id="participation" class="feature-item clickable-div">
+                <h3>المشاركة</h3>
+                <p>نساعدك على المشاركة في الأنشطة والفعاليات للتوعية.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta">
+        <div class="container">
+            <div id="info-section" class="clickable-div">
+                <h2>اكتشف المزيد عن التنمر</h2>
+                <p>للحصول على معلومات شاملة عن التنمر وكيفية التعامل معه، قم بزيارة صفحة المعلومات الخاصة بنا.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 موقع فريق فالكون. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('education').addEventListener('click', function() {
+            window.location.href = 'details.html';
+        });
+
+        document.getElementById('support').addEventListener('click', function() {
+            window.location.href = 'contact.html';
+        });
+
+        document.getElementById('participation').addEventListener('click', function() {
+            window.location.href = 'participation.html';
+        });
+
+        document.getElementById('info-section').addEventListener('click', function() {
+            window.location.href = href ='details.html';
+        });
+    </script>
+</body>
+</html>

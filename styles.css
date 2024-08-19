@@ -1,0 +1,364 @@
+/* تعيين الخطوط الأساسية والخلفية */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+/* تنسيق الحاوية المركزية */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+   
+
+}
+
+/* تنسيق رأس الصفحة */
+header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 1rem 0;
+    position: relative;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #3498db;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+}
+
+/* تنسيق قسم البطل */
+#hero {
+    background: linear-gradient(to right, #3498db, #2ecc71);
+    color: #fff;
+    padding: 5rem 0;
+    text-align: center;
+    animation: fadeIn 2s ease-out;
+}
+
+#hero h2 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#hero p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+/* تنسيق قسم الميزات */
+#features {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+#features h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.feature-item {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 1rem 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feature-item h3 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* تنسيق قسم "عن التنمر" */
+#about {
+    padding: 3rem 0;
+    background-color: #ecf0f1;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+#about p {
+    font-size: 1.2rem;
+    margin: 0 0 2rem;
+}
+
+#about button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#about button:hover {
+    background-color: #2980b9;
+}
+
+/* تنسيق قسم "الموارد" */
+#resources {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+#resources h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+#resources ul {
+    list-style: none;
+    padding: 0;
+}
+
+#resources li {
+    margin: 0.5rem 0;
+}
+
+.resource-link {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.resource-link:hover {
+    color: #2980b9;
+}
+
+/* تنسيق قسم "اتصل بنا" */
+#contact {
+    padding: 3rem 0;
+    background-color: #ecf0f1;
+}
+
+form {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+    font-weight: 600;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #c0392b;
+}
+
+/* الرسوم المتحركة */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+/* تعيين الخطوط الأساسية والخلفية */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+/* تنسيق الحاوية المركزية */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* تنسيق رأس الصفحة */
+header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* تنسيق القسم الرئيسي */
+section {
+    padding: 2rem 0;
+}
+
+#details {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#details h2 {
+    margin-top: 0;
+    font-size: 2rem;
+    color: #1a1a1a;
+}
+
+#details h3 {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+#details p, #details ul {
+    margin-top: 1rem;
+    line-height: 1.6;
+}
+
+#details ul {
+    padding-left: 1.5rem;
+}
+
+#details ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* تنسيق تذييل الصفحة */
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+}
